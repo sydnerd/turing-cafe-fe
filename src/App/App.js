@@ -5,8 +5,16 @@ class App extends Component {
   constructor() {
     super();
     this.state ={
-      reservations: []
+      reservations: [],
+      error: ''
     }
+  }
+
+  componentDidMount() {
+    return fetch('http://localhost:3001/api/v1/reservations')
+      .then(response => response.json())
+      .then(data => this.setState({reservations: data}))
+      .catch(error => this.setState({error: 'We are experiencing technical difficulties. Please try again.'}))
   }
   render() {
     return (
