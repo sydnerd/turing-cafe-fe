@@ -5,10 +5,10 @@ class Form extends Component {
   constructor() {
     super();
     this.state = {
-      name = '',
-      date = '',
-      time = '',
-      number = 0
+      name: '',
+      date:'',
+      time:'',
+      number: ''
     }
   }
 
@@ -34,11 +34,12 @@ class Form extends Component {
           value={this.state.time}
         />
         <input 
-          type='text'
-          placeholder='Name'
-          name='name'
-          value={this.state.name}
+          type='number'
+          placeholder='Number of guests'
+          name='number'
+          value={this.state.number}
         />
+        <button>Make a Reservation</button>
       </form>
     )
   }
