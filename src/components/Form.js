@@ -21,6 +21,24 @@ class Form extends Component {
           name='name'
           value={this.state.name}
         />
+        <input 
+          type='text'
+          placeholder='Date'
+          name='date'
+          value={this.state.date}
+        />
+        <input 
+          type='text'
+          placeholder='Name'
+          name='name'
+          value={this.state.name}
+        />
+        <input 
+          type='text'
+          placeholder='Name'
+          name='name'
+          value={this.state.name}
+        />
       </form>
     )
   }
