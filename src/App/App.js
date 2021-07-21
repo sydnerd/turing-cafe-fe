@@ -22,6 +22,7 @@ class App extends Component {
   addRes = (newRes) => {
     this.setState({reservations: [...this.state.reservations, newRes]})
   }
+  
   render() {
     return (
       <div className="App">
