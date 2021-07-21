@@ -3,6 +3,7 @@ import './Reservations.css';
 import Card from './Card'
 
 const Reservations = ({resys}) => {
+  console.log(resys)
   const resyCards = resys.map(res => {
     return (
       <Card
