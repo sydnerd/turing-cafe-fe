@@ -10,6 +10,8 @@ const Reservations = ({resys}) => {
         date = {res.date}
         time = {res.time}
         number = {res.number}
+        id = {res.id}
+        key={res.id}
       />
     )
   })
