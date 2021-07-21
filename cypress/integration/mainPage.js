@@ -28,4 +28,26 @@ describe('Main page', () => {
       .get('.form-number').should('exist')
       .get('.form-button').should('exist')
   })
+  it('Should submit a new reservation', () => {
+    cy.get('.form-name').should('have.value', '')
+      .get('.form-name').type('Sydney')
+      .get('.form-name').should('have.value', 'Sydney')
+
+      .get('.form-date').should('have.value', '')
+      .get('.form-date').type('1/02')
+      .get('.form-date').should('have.value', '1/02')
+
+      .get('.form-time').should('have.value', '')
+      .get('.form-time').type('7:00')
+      .get('.form-time').should('have.value', '7:00')
+
+      .get('.form-number').should('have.value', '')
+      .get('.form-number').type('4')
+      .get('.form-number').should('have.value', '4')
+  })
+  it('Should add the new reservation', () => {
+    cy.get('form-button').click()
+      .get('.res-container').should('have.length','2')
+  })
+
 })
