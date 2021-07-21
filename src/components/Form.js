@@ -29,9 +29,9 @@ class Form extends Component {
         />
         <input 
           type='text'
-          placeholder='Name'
-          name='name'
-          value={this.state.name}
+          placeholder='Time'
+          name='time'
+          value={this.state.time}
         />
         <input 
           type='text'
