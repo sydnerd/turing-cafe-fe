@@ -29,7 +29,7 @@ class Form extends Component {
     return (
       <form className='form'>
         <input 
-          className='form-name'
+          className='form-name input'
           type='text'
           placeholder='Name'
           name='name'
@@ -37,7 +37,7 @@ class Form extends Component {
           onChange={event => this.handleChange(event)}
         />
         <input 
-          className='form-date'
+          className='form-date input'
           type='text'
           placeholder='Date(mm/dd)'
           name='date'
@@ -45,7 +45,7 @@ class Form extends Component {
           onChange={event => this.handleChange(event)}
         />
         <input 
-          className='form-time'
+          className='form-time input'
           type='text'
           placeholder='Time'
           name='time'
@@ -53,7 +53,7 @@ class Form extends Component {
           onChange={event => this.handleChange(event)}
         />
         <input 
-          className='form-number'
+          className='form-number input'
           type='number'
           placeholder='Number of guests'
           name='number'

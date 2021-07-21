@@ -1,0 +1,10 @@
+.input {
+  margin: 5px;
+  border: 2px solid teal;
+  border-radius: 5px;
+}
+
+.form-button {
+  background-color: teal;
+  color: white;
+}
