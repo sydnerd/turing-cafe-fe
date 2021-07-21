@@ -18,6 +18,10 @@ class App extends Component {
       .then(data => this.setState({reservations: data}))
       .catch(error => this.setState({error: 'We are experiencing technical difficulties. Please try again.'}))
   }
+
+  addRes(newRes) {
+    this.setState({reservations: [... this.state.reservations, newRes]})
+  }
   render() {
     return (
       <div className="App">
